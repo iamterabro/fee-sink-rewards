@@ -12,9 +12,8 @@ func TestDetermineChoiceType(t *testing.T) {
 		seed           int64
 		expectedChoice feesinkreward.ChoiceType
 	}{
-		"Pick Schizo":   {seed: 55, expectedChoice: feesinkreward.ChoiceNodeCost},
-		"Pick BurnBRO":  {seed: 11, expectedChoice: feesinkreward.ChoiceBurnBRO},
-		"Pick NodeCost": {seed: 42, expectedChoice: feesinkreward.ChoiceNodeCost},
+		"Pick Schizo":  {seed: 55, expectedChoice: feesinkreward.ChoiceSchizo},
+		"Pick BurnBRO": {seed: 11, expectedChoice: feesinkreward.ChoiceBurnBRO},
 	}
 
 	for name, tc := range testCases {

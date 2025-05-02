@@ -24,9 +24,8 @@ type Choice struct {
 }
 
 var rewardChoices = []Choice{
-	{ChoiceType: ChoiceSchizo, Weight: 40},
-	{ChoiceType: ChoiceBurnBRO, Weight: 40},
-	{ChoiceType: ChoiceNodeCost, Weight: 20},
+	{ChoiceType: ChoiceSchizo, Weight: 50},
+	{ChoiceType: ChoiceBurnBRO, Weight: 50},
 }
 
 func DetermineChoiceType(randSource *rand.Rand) Choice {
